@@ -6,7 +6,7 @@
 /*   By: dpiza <dpiza@student.42sp.org.br>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/01 23:25:12 by dpiza             #+#    #+#             */
-/*   Updated: 2021/12/02 08:38:36 by dpiza            ###   ########.fr       */
+/*   Updated: 2021/12/02 16:26:19 by dpiza            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,10 +51,10 @@ int	init(t_group *group, int fd)
 
 int	main(int argc, char **argv)
 {
+	int			count;
 	int			fd;
 	char		*input;
 	t_group		group;
-	int			count;
 	int			temp_sum;
 
 	count = 0;

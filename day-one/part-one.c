@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   part1.c                                            :+:      :+:    :+:   */
+/*   part-one.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dpiza <dpiza@student.42sp.org.br>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/01 23:13:35 by dpiza             #+#    #+#             */
-/*   Updated: 2021/12/01 23:39:22 by dpiza            ###   ########.fr       */
+/*   Updated: 2021/12/02 16:26:03 by dpiza            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,13 @@
 
 int	main(int argc, char **argv)
 {
+	int		count;
 	int		fd;
 	char	*input;
 	int		bigger;
-	int		count;
 
-	fd = open(argv[1], O_RDONLY);
-	bigger = 0;
 	count = 0;
+	fd = open(argv[1], O_RDONLY);
 	input = get_next_line(fd);
 	bigger = ft_atoi(input);
 	while (input)
