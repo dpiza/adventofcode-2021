@@ -6,7 +6,7 @@
 /*   By: dpiza <dpiza@student.42sp.org.br>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/01 23:25:12 by dpiza             #+#    #+#             */
-/*   Updated: 2021/12/02 00:08:37 by dpiza            ###   ########.fr       */
+/*   Updated: 2021/12/02 08:38:36 by dpiza            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include "libft/includes/ft_printf.h"
 #include <fcntl.h>
 
-typedef struct group
+typedef struct s_group
 {
 	int	n_one;
 	int	n_two;
