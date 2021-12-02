@@ -6,7 +6,7 @@
 /*   By: dpiza <dpiza@student.42sp.org.br>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 08:31:11 by dpiza             #+#    #+#             */
-/*   Updated: 2021/12/02 09:11:14 by dpiza            ###   ########.fr       */
+/*   Updated: 2021/12/02 09:55:59 by dpiza            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,8 @@ int	main(int argc, char **argv)
 		movement = ft_split(buffer, 32);
 		move(&pos, movement);
 		free (buffer);
+		free (movement[0]);
+		free (movement[1]);
 		free (movement);
 	}
 	ft_printf("Depth: %i\nHoriz: %i\nMultiplied: %i\n",
